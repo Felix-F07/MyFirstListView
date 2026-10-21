@@ -127,6 +127,7 @@ class MainActivity : AppCompatActivity() {
         layout.addView(tvOld)
         layout.addView(etNew)
 
+        builder.setView(layout)
     }
 
 }
