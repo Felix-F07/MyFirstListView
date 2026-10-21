@@ -106,7 +106,8 @@ class MainActivity : AppCompatActivity() {
         data: MutableList<String>,
         adapter: ArrayAdapter<String>
     ){
-
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Update Data")
     }
 
 }
