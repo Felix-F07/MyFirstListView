@@ -1,6 +1,7 @@
 package com.example.myfirstlistview
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,5 +20,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         data.addAll(listOf("1","2","3","4","5"))
+
+        val lvAdapter : ArrayAdapter<String!> = ArrayAdapter(
+            this,
+            android.R.layout.simple_list_item_1,
+            data
+        )
     }
 }
