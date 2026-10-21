@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
         builder.setMessage("Pilih tindakan yang ingin dilakukan: ")
 
         builder.setPositiveButton("Update") { _, _ ->
-            //untuk update
+            showUpdateDialog(position, selectedItem,data,adapter)
         }
         builder.setNegativeButton("Hapus"){_, _ ->
             data.removeAt(position)
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
         data: MutableList<String>,
         adapter: ArrayAdapter<String>
     ){
-        
+
     }
 
 }
