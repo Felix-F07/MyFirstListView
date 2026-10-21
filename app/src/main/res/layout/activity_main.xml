@@ -20,8 +20,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnTambah"
         android:text="Tambah Data"
-        android:layout_weight="1"
-        android:textSize="18sp"/>
+        android:layout_weight="1" />
 
 
 
