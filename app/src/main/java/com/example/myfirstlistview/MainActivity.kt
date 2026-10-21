@@ -6,6 +6,7 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.ListView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -108,6 +109,10 @@ class MainActivity : AppCompatActivity() {
     ){
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Update Data")
+
+        val layout = LinearLayout(this)
+        layout.orientation = LinearLayout.VERTICAL
+        layout.setPadding(50,40,50,10)
     }
 
 }
