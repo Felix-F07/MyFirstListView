@@ -43,8 +43,9 @@ class MainActivity : AppCompatActivity() {
         _btnTambah.setOnClickListener {
             var dtAkhir = Integer.parseInt(data.get(data.size-1))+1
             data.add("$dtAkhir")
+            lvAdapter.notifyDataSetChanged()
         }
-        lvAdapter.notifyDataSetChanged()
+
 
         _lv1.setOnItemClickListener{parent, view, position,id ->
             Toast.makeText(
