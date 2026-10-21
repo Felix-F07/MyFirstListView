@@ -17,5 +17,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        data.addAll(listOf("1","2","3","4","5"))
     }
 }
